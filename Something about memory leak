@@ -1,0 +1,4 @@
+When we create a pointer that point to another object, we need to remember free the memory. For example I have a pointer MenuItem* menuItem,
+When I store the memory of a dynamically MenuItem object like menuItem=new MenuItem(content), In this case, we have dynamically create a MenuItem
+by using new and store the memory to menuItem. Hence, in the destructor of the Menu, we need to deallocate this memory by delete menuItem. 
+In my own understanding, we need to delete the new MenuItem(content) by this way to free all the memory
