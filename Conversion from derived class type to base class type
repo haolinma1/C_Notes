@@ -5,3 +5,4 @@ can directly display the MotorVehicle object. If we want to count<<(MotorVehicle
 is MotorVehicle. In C++ language, it is a const object, which means that before it is output, it cannot be changed. Hence, when we overload the operator << in MotorVehicle, 
 we need to specify that the right operand is const like std::ostream& operator<<(std::ostream& os, const MotorVehicle& vehicle) otherwise, we would have an error indicating that
 the right operand does not fulfill the overloading function. Maybe this is the reason why we always need to specify the function or argument to be const if we don't want to change them
+This is the issue that I have encountered in workshop7
