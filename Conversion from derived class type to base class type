@@ -1,0 +1,7 @@
+Question about converting an object to another type of object
+As we all know, the object from the derived class can be directly converted to the type of its base class. For example, let's say the MotorVehicle is the parent class of the
+Truck class. we have declared an object Truck atruck, when we convert it to MotorVehicle by (MotorVehicle)aTruck, we are creating and overloading the operator << which 
+can directly display the MotorVehicle object. If we want to count<<(MotorVehicle)aTruck; we must be careful. In this case, (MotorVehicle)aTruck is a temporary object whose type
+is MotorVehicle. In C++ language, it is a const object, which means that before it is output, it cannot be changed. Hence, when we overload the operator << in MotorVehicle, 
+we need to specify that the right operand is const like std::ostream& operator<<(std::ostream& os, const MotorVehicle& vehicle) otherwise, we would have an error indicating that
+the right operand does not fulfill the overloading function. Maybe this is the reason why we always need to specify the function or argument to be const if we don't want to change them
