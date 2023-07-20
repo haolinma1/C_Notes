@@ -1,0 +1,3 @@
+So, we have two ways to input content into string. We can use cin>>Cstring or getline(cin,Cstring) (Cstirng is declared by string Cstring)
+The difference between cin>>Cstring and getline(Cstring,cin), main difference: cin>>Cstring will not eat up the new line, but getline will
+Hence, when we use cin>>Cstring, we need to clear the buffer, but for getline, we don't need to
