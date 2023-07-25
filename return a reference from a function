@@ -1,0 +1,3 @@
+When we want to return a reference from a function like const char& Text::operator[](int index)const this prototype. We should be careful, Remember! we can't return 
+any reference that is created in this function since the variables in this function will be destroyed after the function end, and the complier cannot recognize it.
+The variable is dead! Hence, we should always return the reference that is global (declare in header file)
