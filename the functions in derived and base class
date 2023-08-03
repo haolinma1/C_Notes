@@ -1,0 +1,2 @@
+when we use a fuction like operator << in main function, the program will first look through the derived class, it the class have overloaded the operator <<, then all
+the thing is good, it will just use it. But if the complier didn't find it, it will look through his parent class.
