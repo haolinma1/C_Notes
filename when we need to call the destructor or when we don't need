@@ -1,0 +1,4 @@
+when we are not dynamically allocate memory for the object like Student lee; we don't need to call the destructor, it is the responsibility for the program to call the
+destructor. You don't need to write the code to deallocate the memory. But when we dynamically allocate the memory like Student* lee=new Student();. It means that we 
+dynamically allocate the memory (new is the keyword), hence we need to delete the student. delete lee. When we have a array we need to delete[] int. For example
+int* arr=new int(10);
