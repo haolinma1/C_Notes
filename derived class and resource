@@ -1,0 +1,4 @@
+By default, each constructor in derived class call the non-argument constructor of its base class. And this applied to the copy constructor. Hence, for a copy 
+  constructor in derived class, it will call the non-argument constructor in base class. (and base class constructor will first to be invoked)
+  For copy assignment operator, the default copy assignment operator will call the copy assignment operator of its base class. But any custom copy assignment 
+  of a derived class will not call the any copy assignment in its base class.
