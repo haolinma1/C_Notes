@@ -1,0 +1,8 @@
+The derived class object can directly access the member function in its base class, if this function is public or protected. And in the derived class, the same
+  function identifier can shadow the base class function. Hence, when we are doing walkthrough, if we have a derived class object call the function, we first
+  check if the derived class have this function, if it has, then just start from the derived class function, if it doesn't have, then we will go to the the base class to check.
+  In derived class, the complier will insert the non-argument base class constructor for the constructor for derived class by deafult if we don't specify anything
+  Hence, for construtcor in derived class, we should Student::Student(const char* nm, int sn, const float* g, int ng_) : Person(nm){}.
+  btw, how to call the base class member function? Person::display(); 
+Virtual, if we don't have a keyword virtual in the base class function, the complier will not know which type of member function we want to class, this call early binding
+  when we have Base* p=new Derived();, p.display() will call the display function in base class. The binding is static. But if we have virtual, the dispatch is dynamic.
