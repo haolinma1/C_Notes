@@ -1,0 +1,11 @@
+When we use the keyword static in class, if we add it before the member variable. these member variables will remain the same for each instance we have created. And for the program, it just need to allocate the memory once for the static member
+variables.
+static member functions are associated with the class itself but not the instance, which meams that we don't need to create a instance to access this function
+What is inline function. It suggests to the complier that when it has the function call, instead of going to the function, it directly inserts the code of that function and doesn't need to call the function anymore.
+
+smart pointer: 
+std::shared_ptr means the type is a smart pointer and it allow multiple pointer point to this object. How to use smart pointer?
+std::shared_ptr<Type> pass the type to the smart pointer template
+difference between std::unique_ptr and std::shared_ptr. Unique_ptr just allows one pointer pointer to that object, so the copy assignment and copy constructor have been deleted.
+std::shared_ptr allows multiple pointer points to the same object, and it have a counter to count how many pointer are pointing to that object right now, if the count drop to zero, that object will be delete
+
