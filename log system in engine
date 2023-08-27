@@ -2,6 +2,8 @@ When we use the keyword static in class, if we add it before the member variable
 variables.
 static member functions are associated with the class itself but not the instance, which meams that we don't need to create a instance to access this function
 What is inline function. It suggests to the complier that when it has the function call, instead of going to the function, it directly inserts the code of that function and doesn't need to call the function anymore.
+When we have declare the static member variables in class, we also need to define it in the file that we are exactly using it like cpp file
+
 
 smart pointer: 
 std::shared_ptr means the type is a smart pointer and it allow multiple pointer point to this object. How to use smart pointer?
